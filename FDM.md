@@ -1,4 +1,4 @@
-[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/FDM-Presentation_ENGCSRB/edit/main/FDM.md)
+[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/AetherHey008/FDM-Presentation_ENGCSRB/edit/main/FDM.md)
 
 
 #### FDM Printing
