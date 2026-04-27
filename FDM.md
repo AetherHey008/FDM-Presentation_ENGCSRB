@@ -2,7 +2,7 @@
 
 #### FDM Printing
 
-![](ac007d9b437c6077a355ffd175b98dede7c77f41.gif)<!--style="width: 100%; max-width: 80%;"-->
+![](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExODNlOGZna2xuN3M5bHV4cHl5NnM2b2Z1MDB3OHJ6ZDNzbWV6dnJjYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tKrpJSggdryRdJLfus/giphy.gif)<!--style="width: 100%; max-width: 80%;"-->
 
 ### What is 3D printing in gerneral?
 
@@ -10,7 +10,7 @@ In general 3D pritnign describes the process of constructing a three-dimensional
 
 
 
-![](430106375db8520a50bda5fd033280876bcc325a.gif)<!--style="width: 100%; max-width: 80%;"-->
+![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTU5bGtqcGVsY2oxajQ4MDI2ajk3N240MXp6ejQwcTk1eHc4aTZ6dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NPDydge3v69UIYtVCe/giphy.gif)<!--style="width: 100%; max-width: 80%;"-->
 
 
 
