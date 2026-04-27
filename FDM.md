@@ -1,8 +1,8 @@
-[![LiaScript](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExODNlOGZna2xuN3M5bHV4cHl5NnM2b2Z1MDB3OHJ6ZDNzbWV6dnJjYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tKrpJSggdryRdJLfus/giphy.gif)](https://liascript.github.io/course/?https://raw.githubusercontent.com/AetherHey008/FDM-Presentation_ENGCSRB/refs/heads/main/FDM.md)
+[![LiaScript](https://github.com/LiaScript/LiaScript/blob/ffe73bc438077d2d5a2e6a755ffe1e445449f9d5/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/AetherHey008/FDM-Presentation_ENGCSRB/refs/heads/main/FDM.md)
 
 #### FDM Printing
 
-![](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExODNlOGZna2xuN3M5bHV4cHl5NnM2b2Z1MDB3OHJ6ZDNzbWV6dnJjYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tKrpJSggdryRdJLfus/giphy.gif)<!--style="width: 100%; max-width: 80%;"-->
+![](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDlydjQ5ZjA3ZTAyMmFtc3I2MWgxYmdnOW9mb3hmdzlxb29saTQxbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NPDydge3v69UIYtVCe/giphy.gif)<!--style="width: 100%; max-width: 80%;"-->
 
 ### What is 3D printing in gerneral?
 
@@ -10,8 +10,8 @@ In general 3D pritnign describes the process of constructing a three-dimensional
 
 
 
-![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTU5bGtqcGVsY2oxajQ4MDI2ajk3N240MXp6ejQwcTk1eHc4aTZ6dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NPDydge3v69UIYtVCe/giphy.gif)<!--style="width: 100%; max-width: 80%;"-->
-
+![]()<!--style="width: 100%; max-width: 80%;"-->
+IMAGE HERE
 
 
 ### Types of 3D Printers
