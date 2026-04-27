@@ -1,15 +1,17 @@
-[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/AetherHey008/FDM-Presentation_ENGCSRB/refs/heads/main/FDM.md)
-
+[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/AetherHey008/FDM-Presentation_ENGCSRB/refs/heads/main/FDM.md?token=GHSAT0AAAAAAD2BJYHDEVRZCXJRB653UFPG2PPQ2YQ)
 
 #### FDM Printing
 
-![](https://media.giphy.com/media/3oKIP9M5hm5YxsG58I/giphy.gif)<!--style="width: 100%; max-width: 80vh;"-->
+![](ac007d9b437c6077a355ffd175b98dede7c77f41.gif)<!--style="width: 100%; max-width: 80%;"-->
 
 ### What is 3D printing in gerneral?
 
 In general 3D pritnign describes the process of constructing a three-dimensional object from a 3D-model (.obj, .stl, .cad , .3mf, .sldprt)
-![]()<!--style="width: 100%; max-width: 80vh;"-->
-INSERT VIDEO HERE!
+
+
+
+![](430106375db8520a50bda5fd033280876bcc325a.gif)<!--style="width: 100%; max-width: 80%;"-->
+
 
 
 ### Types of 3D Printers
