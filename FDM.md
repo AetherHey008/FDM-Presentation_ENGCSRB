@@ -226,6 +226,7 @@ into a sequence of discrete layers and toolpaths.
 
 This is where the abstract model becomes machine-readable.
 
+!?[](https://www.youtube.com/watch?v=DVj4NW30TuM)
 ---
 
 ### Internal Slicing Steps
