@@ -1,22 +1,34 @@
-[![LiaScript](https://github.com/LiaScript/LiaScript/blob/ffe73bc438077d2d5a2e6a755ffe1e445449f9d5/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/AetherHey008/FDM-Presentation_ENGCSRB/refs/heads/main/FDM-Presentation.md)
+[![LiaScript](https://github.com/LiaScript/LiaScript/blob/ffe73bc438077d2d5a2e6a755ffe1e445449f9d5/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/AetherHey008/FDM-Presentation_ENGCSRB/refs/heads/main/FDM-Extended.md)
 
-# <p style="text-align:center"> FDM Printing
+# <p style="text-align:center"> FDM Printing 
 
 ![](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDlydjQ5ZjA3ZTAyMmFtc3I2MWgxYmdnOW9mb3hmdzlxb29saTQxbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NPDydge3v69UIYtVCe/giphy.gif)<!--style="width: 100%; max-width: 80%;text-align: center;"-->
 
 Matteo Poma</p>
-
 ---
 
-### What is 3D Printing?
+### What is 3D printing in general?
 
-3D printing creates physical objects from digital models using an **additive approach** — material is deposited layer by layer.
+3D printing describes the process of creating physical objects from digital 3D models.
 
-- Also called **Additive Manufacturing**
-- Used in prototyping, medicine, and aerospace
-- Enables complex geometries impossible with traditional methods
+Unlike traditional manufacturing methods, which remove material (e.g. milling),  
+3D printing follows an additive approach:
 
+**Material is deposited layer by layer until the final geometry is achieved.**
+
+This enables the production of complex internal structures, overhangs,  
+and geometries that would be difficult or impossible to manufacture otherwise.
+
+Also referred to as Additive Manufacturing
+Widely used in prototyping, medicine, aerospace
 ---
+
+
+
+!?[](https://https://www.youtube.com/watch?v=EF8CNR-gcXo)<!--style="width: 100%; max-width: 80%;"-->
+---
+
+
 
 ## Types of 3D Printers
 
@@ -31,19 +43,53 @@ Matteo Poma</p>
 |SLA – Formlabs Form 4|SLS – AFS LaserCore 5300|FDM – Elegoo Centauri Carbon|
 |![](https://formlabs.com/_next/image/?url=https%3A%2F%2Fformlabs-media.formlabs.com%2Ffiler_public_thumbnails%2Ffiler_public%2F20%2F5d%2F205d8a5a-3296-4581-9ea9-d2378bcd7abb%2Fformlabs_f4_persp_cover_closed_eng_light_ik_240321_store.png__1354x0_subsampling-2.png&w=3840&q=75)|![](https://www.3dnatives.com/en/wp-content/uploads/sites/2/2024/07/AFS-LaserCore-5300.jpg)|![](https://3d.nice-cdn.com/upload/image/product/large/default/elegoo-centauri-carbon-1-st-816923-de.jpg)|
 
+
+**Observation:**  
+Different technologies optimize for different goals:  
+detail (SLA), strength (SLS), or accessibility (FDM).
+
 ---
 
-### FDM in Detail
+### FDM Printers in Detail
+
+
 
 ![](https://3d.nice-cdn.com/upload/image/product/large/default/elegoo-centauri-carbon-1-st-816923-de.jpg)
 
-FDM builds objects by melting plastic filament and depositing it layer by layer onto a build platform.
 
-**Key components:**
+---
 
-- **Extruder/Nozzle** – melts and deposits material
-- **Build Plate** – print surface
-- **Motion System** – controls X, Y, Z movement
+FDM (Fused Deposition Modeling) is a 3D printing method that builds objects by depositing melted plastic layer by layer.
+
+A plastic filament is fed into a heated nozzle, where it melts and is extruded onto a build platform. The printer moves the nozzle in precise paths, laying down each layer according to a digital 3D model.
+
+The object is created bottom to top, with each new layer bonding to the one below it as it cools. This layered approach is what allows complex shapes to be formed.
+
+Key parts of an FDM printer include:
+
+- Extruder/nozzle – melts and deposits the material
+- Build plate – surface where the object is printed
+- Motion system – moves the nozzle in X, Y, and Z directions
+
+FDM is widely used because it is affordable, easy to use, and suitable for prototyping and basic functional parts.
+
+---
+### Types of FDM-Printers
+
+<ins>**Most common types:**</ins>
+<br>
+
+---
+
+1. <ins>Cartesian ("Bedslingers"): </ins>
+<br>
+ ![](https://i.all3dp.com/workers/images/fit=scale-down,w=1456,gravity=0.5x0.5,format=auto/wp-content/uploads/2022/04/06142132/prusa-i3-mk3_19-large-e1688658609101.jpg) <!--style="width: 100%; max-width: 500px;"-->
+2. <ins>CoreXY :</ins>
+<br>
+ ![](https://i.all3dp.com/workers/images/fit=scale-down,w=1456,gravity=0.5x0.5,format=auto/wp-content/uploads/2022/04/06143931/lead-medium-1.jpg) <!--style="width: 100%; max-width: 500px;"-->
+3. <ins>Delta : </ins>
+<br>
+![](https://i.all3dp.com/workers/images/fit=scale-down,w=1456,gravity=0.5x0.5,format=auto/wp-content/uploads/2022/04/06144254/FLSun_V400-Front-loss.jpg) <!--style="width: 100%; max-width: 500px;"-->
 
 ---
 
@@ -51,145 +97,242 @@ FDM builds objects by melting plastic filament and depositing it layer by layer 
 
 ![](https://upload.wikimedia.org/wikipedia/commons/3/3d/FDM_printing_diagram.png)<!--style="width: 100%; max-width: 500px;"-->
 
-1. **Extrusion** – Nozzle deposits molten plastic
-2. **X/Y Movement** – Print head follows layer path
-3. **Layer Completion** – Full 2D cross-section formed
-4. **Z Movement** – System rises and repeats
-
 ---
 
+The FDM process can be understood as a repeated sequence of steps:
+
+1. **Material extrusion**  
+   The nozzle deposits molten plastic onto the build surface 
+<br>
+   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Extruder_lemio-en.svg/500px-Extruder_lemio-en.svg.png) 
+<br>
+
+---
+2. **Path following (X/Y movement)**  
+   The print head follows a predefined path for each layer  
+<br>
+   ![](https://airwolf3d.com/wp-content/uploads/2017/01/core-XY.gif)
+<br>
+
+---
+3. **Layer completion**  
+   A full 2D cross-section of the object is formed  
+
+<br>
+![](https://i.all3dp.com/workers/images/fit=scale-down,w=1200,h=675,quality=79,gravity=0.5x0.5,format=auto/wp-content/uploads/2021/07/22135217/5ucqu7ycjwh21.jpg)
+<br>
+
+---
+4. **Layer stacking (Z movement)**  
+   The system moves vertically and repeats the process  
+<br>
+![](https://media.giphy.com/media/tKrpJSggdryRdJLfus/giphy.gif)
+<br>
+
+---
 ### Core Components
 
-**1. Extruder**
-Feeds filament into the hotend with controlled force.
+---
 
-- **Direct drive** – motor on print head (better control)
-- **Bowden** – motor separate (lighter head)
+1. Extruder
 
-**2. Hotend / Nozzle**
-Melts filament and extrudes it through a small opening.
+The extruder is responsible for feeding filament into the hotend  
+with controlled force and speed.
 
-- Standard nozzle: **0.4 mm**
-- Smaller = more detail, longer print time
+It determines how much material is pushed into the nozzle.
 
-![](https://www.drdflo.com/assets/img/How-to-build-a-3d-printer/Anatomy-of-FFF-Extruder-01.png)<!--style="width: 100%; max-width: 400px;"-->
+
+Direct drive: motor mounted on print head (better control)
+Bowden: motor mounted separately (lighter print head)
+
+
+2. Hotend / Nozzle
+
+The hotend heats the filament beyond its melting point  
+and forces it through a small nozzle.
+
+The nozzle diameter directly affects print resolution.
+
+Standard nozzle size: 0.4 mm
+Smaller nozzle = higher detail, longer print time
 
 ---
 
-**3. Build Plate**
-Surface where the object is printed — needs adhesion during print, easy release after.
+<br>
+![](https://www.drdflo.com/assets/img/How-to-build-a-3d-printer/Anatomy-of-FFF-Extruder-01.png)<!--style="width: 100%; max-width: 400px;"-->
+<br>
+
+
+---
+
+---
+
+3. Build Plate
+
+The build plate is the surface on which the object is printed.
+
+It must provide sufficient adhesion during printing  
+while still allowing easy removal afterward.
 
 ![](https://de.elegoo.com/cdn/shop/files/Dual-Sided-Build-Plate-Pack-for-Centauri-Carbon-and-Centauri-1.jpg?crop=center&v=1750937412&width=1220)<!--style="width: 100%; max-width: 400px;"-->
 
-- Heated beds reduce warping
-- Common surfaces: glass, PEI, textured sheets
 
-**4. Motion System**
-Stepper motors move the print head precisely in X, Y, and Z axes.
+Heated beds reduce warping
+Common surfaces: glass, PEI, textured sheets
 
-- X/Y = horizontal layer path
-- Z = vertical layer advance
-- Precision within fractions of a millimeter
 
 ---
 
-### Advantages, Constraints & Risks
+4. Motion System (Axes & Stepper Motors)
+
+The motion system controls precise positioning  
+in three dimensions (X, Y, Z).
+
+Stepper motors move the print head and/or build plate  
+according to the G-code instructions.
+
+![](https://m.media-amazon.com/images/I/61n4yD2-UjL.jpg)<!--style="width: 100%; max-width: 400px;"-->
+
+
+||
+|X/Y = horizontal movement|
+|Z = vertical layer movement|
+|Precision is typically within fractions of a millimeter|
+
+---
+
+### Advantages, Constraints and Risks
 
 **Advantages**
-- Low cost, widely available
-- Easy to operate and maintain
-- Great for rapid prototyping
+- Low entry cost and widely available systems  
+- Straightforward operation and maintenance  
+- Suitable for rapid prototyping  
 
 **Constraints**
-- Limited resolution (nozzle diameter & layer height)
-- Anisotropic strength (weaker between layers)
-- Surface finish may need post-processing
+- Limited resolution due to nozzle diameter and layer height  
+- Mechanical strength is anisotropic (weaker between layers)  
+- Surface finish often requires post-processing  
 
-**Risks**
-- Toxic fumes (e.g. ABS printing)
-- Print failures
 
-![](https://dms-discourse-static.s3.dualstack.us-east-1.amazonaws.com/optimized/2X/1/1e0889f0d3cb71fe1a1dc15a23bcda8cf78d4241_2_596x500.jpg)<!--style="width: 100%; max-width: 400px;"-->
+**Risk**
+
+- toxic gases (ABS-printing)
+- printfails
 
 ---
+![](https://dms-discourse-static.s3.dualstack.us-east-1.amazonaws.com/optimized/2X/1/1e0889f0d3cb71fe1a1dc15a23bcda8cf78d4241_2_596x500.jpg)<!--style="width: 100%; max-width: 400px;"-->
 
 ## From Model to Print
 
-A 3D model must be translated into **machine instructions** before printing.
+A 3D model alone is not sufficient for printing.
 
-This is done by a **Slicer**.
+Printers require **explicit movement and control instructions**.
 
-![](https://preview.redd.it/benchy-spinning-360-gif-v0-94ql5pa87aif1.gif?width=1000&auto=webp&s=51a3c1d9a381b5cedf5dfea99afc62e8a2c2e928)<!--style="width: 50%; max-width: 400px;"-->
+This translation step is handled by a slicer.
 
+---
+
+![](https://preview.redd.it/benchy-spinning-360-gif-v0-94ql5pa87aif1.gif?width=1000&auto=webp&s=51a3c1d9a381b5cedf5dfea99afc62e8a2c2e928)<!--style="width: 50%; max-width: 400px%;"-->
+
+---
 ---
 
 ## Slicer (Orca Slicer)
 
-Converts a 3D model into discrete layers and toolpaths the printer can execute.
+A slicer converts a continuous 3D geometry  
+into a sequence of discrete layers and toolpaths.
+
+This is where the abstract model becomes machine-readable.
 
 !?[](https://www.youtube.com/watch?v=DVj4NW30TuM)
+---
+
+
+### Key Parameters and Their Impact
+
+**Layer Height**  
+Determines vertical resolution and print time  
+→ smaller layers increase detail but require more time  
+
+**Infill Density**  
+Controls internal structure and strength  
+→ higher infill increases strength and material usage  
+
+**Temperature**  
+Affects viscosity and layer bonding  
+→ too low: weak adhesion, too high: stringing  
+
+**Print Speed**  
+Impacts precision and reliability  
+→ higher speed reduces quality and increases error risk  
 
 ---
 
-### Key Slicer Parameters
 
-| Parameter | Effect |
-|-----------|--------|
-| **Layer Height** | Smaller = more detail, longer print |
-| **Infill Density** | Higher = stronger, more material |
-| **Temperature** | Too low: weak bonds — too high: stringing |
-| **Print Speed** | Higher = faster, but lower quality |
+## Introduction to G-code
 
----
+### What is G-code?
 
-## G-code
-** What is G-code?**
+G-code is a standardized command language used to control machines like 3D printers, CNC mills, and laser cutters.
+It tells the machine how to move, how fast to move, and what actions to perform (such as heating or extruding material).
 
-A standardized command language for machines like 3D printers and CNC mills.
+Each line is a command consisting of:
 
-Each line = one command + optional parameters (position, speed, temperature).
+* a code (e.g. `G1`, `M104`)
+* optional parameters (e.g. `X`, `Y`, `E`, `F`, `S`)
 
 ---
 
-### Common G-code Commands
+### Common G-code Commands Overview
 
-| Command | Meaning |
-|---------|---------|
-| `G0` / `G1` | Move toolhead (G1 = controlled/printing move) |
-| `G28` | Home all axes |
-| `G90` / `G91` | Absolute / Relative positioning |
-| `G92` | Set current position |
-| `G29` | Auto bed leveling |
+| Command     | Meaning                                                                           |
+| ----------- | --------------------------------------------------------------------------------- |
+| `G0` / `G1` | Move the toolhead (linear move). `G1` is controlled movement (used for printing). |
+| `G28`       | Home all axes (move to origin).                                                   |
+| `G90`       | Absolute positioning mode.                                                        |
+| `G91`       | Relative positioning mode.                                                        |
+| `G92`       | Set current position (e.g. reset extruder).                                       |
+| `G4`        | Pause (dwell) for a set time.                                                     |
+| `G29`       | Auto bed leveling (probe the bed).                                                |
 
 ---
 
-### Common M-code Commands
+### Common M-code Commands Overview
 
-| Command | Meaning |
-|---------|---------|
-| `M104` / `M109` | Set nozzle temp (M109 waits) |
-| `M140` / `M190` | Set bed temp (M190 waits) |
-| `M106` / `M107` | Fan on / off |
-| `M220` / `M221` | Speed / flow multiplier |
-| `M204` | Set acceleration |
-| `M112` | Emergency stop |
+| Command | Meaning                           |
+| ------- | --------------------------------- |
+| `M104`  | Set nozzle temperature (no wait). |
+| `M109`  | Set nozzle temperature and wait.  |
+| `M140`  | Set bed temperature (no wait).    |
+| `M190`  | Set bed temperature and wait.     |
+| `M106`  | Turn on/set fan speed.            |
+| `M107`  | Turn off fan.                     |
+| `M220`  | Set print speed multiplier.       |
+| `M221`  | Set extrusion flow multiplier.    |
+| `M83`   | Relative extrusion mode.          |
+| `M82`   | Absolute extrusion mode.          |
+| `M204`  | Set acceleration.                 |
+| `M400`  | Wait for all moves to finish.     |
+| `M105`  | Report current temperatures.      |
+| `M112`  | Emergency stop.                   |
 
 ---
 
 ### Common Parameters
 
-| Parameter | Meaning |
-|-----------|---------|
-| `X`, `Y`, `Z` | Position coordinates |
-| `E` | Extrusion amount |
-| `F` | Feedrate (speed) |
-| `S` | Value (temp, fan speed, etc.) |
+| Parameter     | Meaning                                      |
+| ------------- | -------------------------------------------- |
+| `X`, `Y`, `Z` | Position coordinates                         |
+| `E`           | Extrusion amount                             |
+| `F`           | Feedrate (speed)                             |
+| `S`           | General value (temperature, fan speed, etc.) |
+| `P`           | Index (fan number, time, etc.)               |
 
 ---
 
-### Example G-code
+### Example G-code (Startup & Calibration)
 
-```gcode "full-example"
+```gcode id="full-example"
 ; EXECUTABLE_BLOCK_START
 EXCLUDE_OBJECT_DEFINE NAME=Cannonade_Cogfort.stl_id_0_copy_0 CENTER=128.5,128.5 POLYGON=[[72.73,106.132],[72.742,105.964],[72.778,105.832],[73.486,104.212],[73.63,104.044],[74.686,103.132],[94.474,88.216],[94.546,88.18],[114.082,84.952],[129.946,84.952],[169.354,88.192],[169.534,88.216],[169.582,88.24],[169.69,88.324],[170.182,88.84],[170.314,89.032],[170.35,89.128],[184.234,126.784],[184.246,126.868],[184.27,127.228],[184.258,131.488],[184.246,133.12],[184.21,133.24],[170.374,170.98],[170.338,171.076],[170.29,171.16],[169.798,171.652],[169.642,171.808],[169.534,171.856],[168.886,171.88],[158.458,172.048],[157.63,172.048],[94.63,171.856],[94.534,171.844],[94.45,171.808],[94.366,171.736],[93.97,171.388],[93.778,171.208],[93.766,171.196],[93.694,171.1],[77.434,129.472],[77.386,129.34],[73.882,116.896],[72.73,106.132]]
 M106 S0
@@ -239,14 +382,14 @@ G1 X178.5 E2
 ;End PA test.
 ```
 
+## Summary and Q&A
 
----
+FDM 3D printing is a simple and cost-effective way to turn digital models into physical objects by building them layer by layer.
 
-## Summary
+While it has some limitations in precision and surface quality, it remains widely used thanks to its accessibility and ease of use.
 
-- FDM builds objects **layer by layer** using melted plastic filament
-- Simple, affordable, and widely used for **prototyping**
-- Key steps: **Model → Slicer → G-code → Print**
-- Trade-offs in precision and surface quality, but highly accessible
+From slicing the model to generating G-code, each step plays a key role in the final result.
 
-**ANY QUESTIONS?**
+Overall, FDM is a powerful tool for rapid prototyping and practical applications.
+
+ANY QUESTIONS?
