@@ -70,10 +70,37 @@ FDM builds objects by melting plastic filament and depositing it layer by layer 
 
 ![](https://upload.wikimedia.org/wikipedia/commons/3/3d/FDM_printing_diagram.png)<!--style="width: 100%; max-width: 500px;"-->
 
-1. **Extrusion** – Nozzle deposits molten plastic
-2. **X/Y Movement** – Print head follows layer path
-3. **Layer Completion** – Full 2D cross-section formed
-4. **Z Movement** – System rises and repeats
+---
+
+The FDM process can be understood as a repeated sequence of steps:
+
+1. **Material extrusion**  
+   The nozzle deposits molten plastic onto the build surface 
+<br>
+   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Extruder_lemio-en.svg/500px-Extruder_lemio-en.svg.png) 
+<br>
+
+---
+2. **Path following (X/Y movement)**  
+   The print head follows a predefined path for each layer  
+<br>
+   ![](https://airwolf3d.com/wp-content/uploads/2017/01/core-XY.gif)
+<br>
+
+---
+3. **Layer completion**  
+   A full 2D cross-section of the object is formed  
+
+<br>
+![](https://i.all3dp.com/workers/images/fit=scale-down,w=1200,h=675,quality=79,gravity=0.5x0.5,format=auto/wp-content/uploads/2021/07/22135217/5ucqu7ycjwh21.jpg)
+<br>
+
+---
+4. **Layer stacking (Z movement)**  
+   The system moves vertically and repeats the process  
+<br>
+![](https://media.giphy.com/media/tKrpJSggdryRdJLfus/giphy.gif)
+<br>
 
 ---
 
