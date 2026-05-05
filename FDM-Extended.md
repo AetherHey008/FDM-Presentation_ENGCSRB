@@ -33,29 +33,22 @@ Widely used in prototyping, medicine, aerospace
 ## Types of 3D Printers
 
 | Method | Process | Strengths | Limitations |
-|--------|--------|----------|-------------|
-| Resin (SLA/DLP) | UV light cures liquid resin layer by layer | Very high detail, smooth surfaces | Requires post-processing, resin handling |
-| Powder (SLS/MJF) | Laser fuses powder into solid layers | Strong parts, no support structures | Expensive systems and materials |
-| Filament (FDM/FFF) | Heated nozzle extrudes molten filament | Low cost, simple operation | Visible layers, lower precision |
+|--------|---------|-----------|-------------|
+| Resin (SLA/DLP) | UV light cures liquid resin | High detail, smooth surfaces | Post-processing required |
+| Powder (SLS/MJF) | Laser fuses powder layers | Strong parts, no supports | Expensive |
+| Filament (FDM) | Heated nozzle extrudes plastic | Low cost, easy to use | Visible layers |
+
+---
+
+|SLA – Formlabs Form 4|SLS – AFS LaserCore 5300|FDM – Elegoo Centauri Carbon|
+|![](https://formlabs.com/_next/image/?url=https%3A%2F%2Fformlabs-media.formlabs.com%2Ffiler_public_thumbnails%2Ffiler_public%2F20%2F5d%2F205d8a5a-3296-4581-9ea9-d2378bcd7abb%2Fformlabs_f4_persp_cover_closed_eng_light_ik_240321_store.png__1354x0_subsampling-2.png&w=3840&q=75)|![](https://www.3dnatives.com/en/wp-content/uploads/sites/2/2024/07/AFS-LaserCore-5300.jpg)|![](https://3d.nice-cdn.com/upload/image/product/large/default/elegoo-centauri-carbon-1-st-816923-de.jpg)|
+
 
 **Observation:**  
 Different technologies optimize for different goals:  
 detail (SLA), strength (SLS), or accessibility (FDM).
 
 ---
-<br>
-<br>
-|SLA Printer|
-Formlabs Form 4
-![](https://formlabs.com/_next/image/?url=https%3A%2F%2Fformlabs-media.formlabs.com%2Ffiler_public_thumbnails%2Ffiler_public%2F20%2F5d%2F205d8a5a-3296-4581-9ea9-d2378bcd7abb%2Fformlabs_f4_persp_cover_closed_eng_light_ik_240321_store.png__1354x0_subsampling-2.png&w=3840&q=75)
-
-|SLS Printer|
- AFS LaserCore 5300 Printer
-![](https://www.3dnatives.com/en/wp-content/uploads/sites/2/2024/07/AFS-LaserCore-5300.jpg)
-
-|FDM Printer|
-Elegoo Centauri Carbon
-![](https://3d.nice-cdn.com/upload/image/product/large/default/elegoo-centauri-carbon-1-st-816923-de.jpg)
 
 ### FDM Printers in Detail
 
@@ -79,6 +72,24 @@ Key parts of an FDM printer include:
 - Motion system – moves the nozzle in X, Y, and Z directions
 
 FDM is widely used because it is affordable, easy to use, and suitable for prototyping and basic functional parts.
+
+---
+### Types of FDM-Printers
+
+<ins>**Most common types:**</ins>
+<br>
+
+---
+
+1. <ins>Cartesian ("Bedslingers"): </ins>
+<br>
+ ![](https://i.all3dp.com/workers/images/fit=scale-down,w=1456,gravity=0.5x0.5,format=auto/wp-content/uploads/2022/04/06142132/prusa-i3-mk3_19-large-e1688658609101.jpg) <!--style="width: 100%; max-width: 500px;"-->
+2. <ins>CoreXY :</ins>
+<br>
+ ![](https://i.all3dp.com/workers/images/fit=scale-down,w=1456,gravity=0.5x0.5,format=auto/wp-content/uploads/2022/04/06143931/lead-medium-1.jpg) <!--style="width: 100%; max-width: 500px;"-->
+3. <ins>Delta : </ins>
+<br>
+![](https://i.all3dp.com/workers/images/fit=scale-down,w=1456,gravity=0.5x0.5,format=auto/wp-content/uploads/2022/04/06144254/FLSun_V400-Front-loss.jpg) <!--style="width: 100%; max-width: 500px;"-->
 
 ---
 
