@@ -1,6 +1,9 @@
-Hey there! If you're reading this you've probaly have nothing better to do so I'll give you something cool.
-Before that:
+****Hey there! If you're reading this you've probaly have nothing better to do so I'll give you something cool.****
+
+
+**Before that:**
 FDM-Extended is the the Liascript to READ
+
 FDM-Presentation is the one to WATCH!!!
 
 ok now you can read PEAK-FICTION:
