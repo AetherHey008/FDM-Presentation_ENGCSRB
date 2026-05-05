@@ -66,13 +66,19 @@ Elegoo Centauri Carbon
 
 ---
 
-FDM (Fused Deposition Modeling) constructs objects  
-by depositing molten thermoplastic in a controlled manner.
+FDM (Fused Deposition Modeling) is a 3D printing method that builds objects by depositing melted plastic layer by layer.
 
-The process is discrete and layered, meaning the final object  
-is composed of many individual cross-sections stacked vertically.
+A plastic filament is fed into a heated nozzle, where it melts and is extruded onto a build platform. The printer moves the nozzle in precise paths, laying down each layer according to a digital 3D model.
 
+The object is created bottom to top, with each new layer bonding to the one below it as it cools. This layered approach is what allows complex shapes to be formed.
 
+Key parts of an FDM printer include:
+
+- Extruder/nozzle – melts and deposits the material
+- Build plate – surface where the object is printed
+- Motion system – moves the nozzle in X, Y, and Z directions
+
+FDM is widely used because it is affordable, easy to use, and suitable for prototyping and basic functional parts.
 
 ---
 
