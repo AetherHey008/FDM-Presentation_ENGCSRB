@@ -1,9 +1,10 @@
 [![LiaScript](https://github.com/LiaScript/LiaScript/blob/ffe73bc438077d2d5a2e6a755ffe1e445449f9d5/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/AetherHey008/FDM-Presentation_ENGCSRB/refs/heads/main/FDM.md)
 
-#### FDM Printing
+# <p style="text-align:center"> FDM Printing 
 
-![](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDlydjQ5ZjA3ZTAyMmFtc3I2MWgxYmdnOW9mb3hmdzlxb29saTQxbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NPDydge3v69UIYtVCe/giphy.gif)<!--style="width: 100%; max-width: 80%;"-->
+![](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDlydjQ5ZjA3ZTAyMmFtc3I2MWgxYmdnOW9mb3hmdzlxb29saTQxbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NPDydge3v69UIYtVCe/giphy.gif)<!--style="width: 100%; max-width: 80%;text-align: center;"-->
 
+Matteo Poma</p>
 ---
 
 ### What is 3D printing in general?
@@ -29,7 +30,7 @@ Widely used in prototyping, medicine, aerospace
 
 
 
-### Types of 3D Printers
+## Types of 3D Printers
 
 | Method | Process | Strengths | Limitations |
 |--------|--------|----------|-------------|
@@ -204,7 +205,7 @@ according to the G-code instructions.
 ---
 ![](https://dms-discourse-static.s3.dualstack.us-east-1.amazonaws.com/optimized/2X/1/1e0889f0d3cb71fe1a1dc15a23bcda8cf78d4241_2_596x500.jpg)<!--style="width: 100%; max-width: 400px;"-->
 
-### From Model to Print
+## From Model to Print
 
 A 3D model alone is not sufficient for printing.
 
@@ -219,7 +220,7 @@ This translation step is handled by a slicer.
 ---
 ---
 
-### Slicer (Orca Slicer)
+## Slicer (Orca Slicer)
 
 A slicer converts a continuous 3D geometry  
 into a sequence of discrete layers and toolpaths.
@@ -229,16 +230,6 @@ This is where the abstract model becomes machine-readable.
 !?[](https://www.youtube.com/watch?v=DVj4NW30TuM)
 ---
 
-### Internal Slicing Steps
-
-- The model is intersected with horizontal planes  
-- Each intersection defines a 2D contour (layer)  
-- Toolpaths are generated for perimeters and infill  
-- Process parameters are applied to each path  
-
-The result is a fully specified manufacturing plan.
-
----
 
 ### Key Parameters and Their Impact
 
@@ -260,28 +251,128 @@ Impacts precision and reliability
 
 ---
 
-### Output: G-Code
 
-The slicer produces a G-code file.
+## Introduction to G-code
 
-This file contains a sequential list of instructions  
-that fully define the printing process.
+### What is G-code?
 
----
+G-code is a standardized command language used to control machines like 3D printers, CNC mills, and laser cutters.
+It tells the machine how to move, how fast to move, and what actions to perform (such as heating or extruding material).
 
-### G-Code Structure
+Each line is a command consisting of:
 
-G-code is a line-based command language.
-
-Each line represents a single instruction  
-executed in order by the printer firmware.
+* a code (e.g. `G1`, `M104`)
+* optional parameters (e.g. `X`, `Y`, `E`, `F`, `S`)
 
 ---
 
-### Example
+### Common G-code Commands Overview
 
-```gcode
-G28        ; Home all axes
-G1 X50 Y50 ; Move to position
-G1 Z0.2    ; Set layer height
-G1 E10     ; Extrude filament
+| Command     | Meaning                                                                           |
+| ----------- | --------------------------------------------------------------------------------- |
+| `G0` / `G1` | Move the toolhead (linear move). `G1` is controlled movement (used for printing). |
+| `G28`       | Home all axes (move to origin).                                                   |
+| `G90`       | Absolute positioning mode.                                                        |
+| `G91`       | Relative positioning mode.                                                        |
+| `G92`       | Set current position (e.g. reset extruder).                                       |
+| `G4`        | Pause (dwell) for a set time.                                                     |
+| `G29`       | Auto bed leveling (probe the bed).                                                |
+
+---
+
+### Common M-code Commands Overview
+
+| Command | Meaning                           |
+| ------- | --------------------------------- |
+| `M104`  | Set nozzle temperature (no wait). |
+| `M109`  | Set nozzle temperature and wait.  |
+| `M140`  | Set bed temperature (no wait).    |
+| `M190`  | Set bed temperature and wait.     |
+| `M106`  | Turn on/set fan speed.            |
+| `M107`  | Turn off fan.                     |
+| `M220`  | Set print speed multiplier.       |
+| `M221`  | Set extrusion flow multiplier.    |
+| `M83`   | Relative extrusion mode.          |
+| `M82`   | Absolute extrusion mode.          |
+| `M204`  | Set acceleration.                 |
+| `M400`  | Wait for all moves to finish.     |
+| `M105`  | Report current temperatures.      |
+| `M112`  | Emergency stop.                   |
+
+---
+
+### Common Parameters
+
+| Parameter     | Meaning                                      |
+| ------------- | -------------------------------------------- |
+| `X`, `Y`, `Z` | Position coordinates                         |
+| `E`           | Extrusion amount                             |
+| `F`           | Feedrate (speed)                             |
+| `S`           | General value (temperature, fan speed, etc.) |
+| `P`           | Index (fan number, time, etc.)               |
+
+---
+
+### Example G-code (Startup & Calibration)
+
+```gcode id="full-example"
+; EXECUTABLE_BLOCK_START
+EXCLUDE_OBJECT_DEFINE NAME=Cannonade_Cogfort.stl_id_0_copy_0 CENTER=128.5,128.5 POLYGON=[[72.73,106.132],[72.742,105.964],[72.778,105.832],[73.486,104.212],[73.63,104.044],[74.686,103.132],[94.474,88.216],[94.546,88.18],[114.082,84.952],[129.946,84.952],[169.354,88.192],[169.534,88.216],[169.582,88.24],[169.69,88.324],[170.182,88.84],[170.314,89.032],[170.35,89.128],[184.234,126.784],[184.246,126.868],[184.27,127.228],[184.258,131.488],[184.246,133.12],[184.21,133.24],[170.374,170.98],[170.338,171.076],[170.29,171.16],[169.798,171.652],[169.642,171.808],[169.534,171.856],[168.886,171.88],[158.458,172.048],[157.63,172.048],[94.63,171.856],[94.534,171.844],[94.45,171.808],[94.366,171.736],[93.97,171.388],[93.778,171.208],[93.766,171.196],[93.694,171.1],[77.434,129.472],[77.386,129.34],[73.882,116.896],[72.73,106.132]]
+M106 S0
+M106 P2 S0
+;TYPE:Custom
+;;===== date: 20240520 =====================
+;printer_model:Elegoo Centauri Carbon
+;initial_filament:PLA
+;curr_bed_type:Textured PEI Plate
+M400
+M220 S100
+M221 S100
+M104 S140
+M140 S60
+G90
+G28
+M729
+M106 P2 S255
+M190 S60
+M106 P2 S0
+
+M106 P3 S255
+
+M204 S5000
+
+G1 X128.5 Y-1.2 F20000
+G1 Z0.3 F900
+M109 S220
+M83
+G92 E0
+G1 F1280 
+G1 X-1.2 E10.156
+G1 Y98.8 E7.934
+G1 X-0.5 Y100 E0.1
+G1 Y-0.3 E7.934
+G1 X78.5 E6.284
+G1 F256 
+G1 X98.5 E2
+G1 F1280 
+G1 X118.5 E2
+G1 F256 
+G1 X138.5 E2
+G1 F1280 
+G1 X158.5 E2
+G1 F1280 
+G1 X178.5 E2
+;End PA test.
+```
+
+## Summary and Q&A
+
+FDM 3D printing is a simple and cost-effective way to turn digital models into physical objects by building them layer by layer.
+
+While it has some limitations in precision and surface quality, it remains widely used thanks to its accessibility and ease of use.
+
+From slicing the model to generating G-code, each step plays a key role in the final result.
+
+Overall, FDM is a powerful tool for rapid prototyping and practical applications.
+
+ANY QUESTIONS?
