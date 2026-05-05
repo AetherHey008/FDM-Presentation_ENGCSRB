@@ -17,6 +17,8 @@ Matteo Poma</p>
 - Enables complex geometries impossible with traditional methods
 
 ---
+!?[](https://https://www.youtube.com/watch?v=EF8CNR-gcXo)<!--style="width: 100%; max-width: 80%;"-->
+---
 
 ## Types of 3D Printers
 
